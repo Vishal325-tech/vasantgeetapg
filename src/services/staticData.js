@@ -8,8 +8,8 @@ export const staticSettings = {
   brandSubtitle: 'Boys PG & Mess • A Home Away From Home',
   logoUrl: `${import.meta.env.BASE_URL}logo.jpeg`,
   tagline: 'BOYS PG & MESS — A Home Away From Home',
-  phone: '+91 8494865435',
-  phone2: '+91 8076762582',
+  phone: '+91 8073762582',
+  phone2: '+91 8494865435',
   email: 'vasantshagoti1@gmail.com',
   address: 'Near NTTF, BRTC Bus Stand, Behind Sangam Theater, Dharwad – 580001, Karnataka',
   mapEmbedUrl:

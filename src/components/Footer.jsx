@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, Phone, MessageSquare, Mail, MapPin, Sparkles, Heart, Code2 } from 'lucide-react';
 
 export default function Footer({ settings, onOpenAdmin, onOpenEnquiry }) {
-  const phone = settings?.phone || '+91 8494865435';
+  const phone = settings?.phone || '+91 8073762582';
   const whatsapp = settings?.whatsapp || '+91 8494865435';
   const email = settings?.email || 'contact@vasantgeetha.com';
   const address = settings?.address || 'Plot No. 42, Vidya Nagar Student Enclave, Near City Central College';

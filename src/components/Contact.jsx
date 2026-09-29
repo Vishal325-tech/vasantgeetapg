@@ -74,7 +74,7 @@ export default function Contact({ settings, prefillRoom }) {
     }
   };
 
-  const phone = settings?.phone || '+91 8494865435';
+  const phone = settings?.phone || '+91 8073762582';
   const whatsapp = settings?.whatsapp || '+91 8494865435';
   const cleanPhone = phone.replace(/[^0-9+]/g, '');
   const cleanWhatsapp = whatsapp.replace(/[^0-9]/g, '');

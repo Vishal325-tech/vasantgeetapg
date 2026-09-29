@@ -54,7 +54,7 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
     }
   };
 
-  const phone = settings?.phone || '+91 8494865435';
+  const phone = settings?.phone || '+91 8073762582';
   const cleanPhone = phone.replace(/[^0-9+]/g, '');
 
   return (
