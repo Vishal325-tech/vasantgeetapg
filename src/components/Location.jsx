@@ -7,10 +7,10 @@ export default function Location({ settings }) {
   const mapsEmbed = settings?.googleMapsEmbed || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.886047120786!2d77.5945627!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzUnNDAuNCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin";
 
   const nearby = settings?.nearbyLocations || {
-    colleges: "City Central Engineering College (350m), Government Degree College (700m)",
-    busStops: "Main Bus Depot (200m), University Circle (450m)",
-    railwayStation: "Central Railway Station (2.8km - 8 min ride)",
-    keyLandmarks: "Public Central Study Library (250m), Hospital & ATMs (100m)"
+    colleges: "NTTF Dharwad (500m), Karnatak College Dharwad (KCD) (1.5km), JSS College (2km)",
+    busStops: "CBT Dharwad (1km), NTTF BRTS Stop (50m)",
+    railwayStation: "Dharwad Railway Station (1.5km - 5 min ride)",
+    keyLandmarks: "Sangam Circle (50m), Sangam Theatre (20-50m), ATMs & Hospitals (200m)"
   };
 
   const handleDirections = () => {

@@ -324,13 +324,13 @@ export default function Hero({ settings, onOpenEnquiry }) {
 
               {/* User Photo */}
               <img
-                src={`${import.meta.env.BASE_URL}vishal.jpg`}
-                alt="Vishal S H – Developer"
+                src={`${import.meta.env.BASE_URL}hero-img.jpg`}
+                alt="VasantGeeta Mascot"
                 style={{
                   width: '100%',
-                  height: '420px',
+                  height: '460px',
                   objectFit: 'cover',
-                  objectPosition: 'center center',
+                  objectPosition: 'center top',
                   display: 'block'
                 }}
               />
