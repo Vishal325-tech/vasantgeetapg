@@ -29,10 +29,24 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
   };
 
   useEffect(() => {
+    let ticking = false;
+    let prevScrolled = false;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 25);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const isScrolled = window.scrollY > 15;
+          if (isScrolled !== prevScrolled) {
+            prevScrolled = isScrolled;
+            setScrolled(isScrolled);
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -64,11 +78,15 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
           position: 'sticky',
           top: 0,
           zIndex: 1000,
-          backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.95)',
-          backdropFilter: 'blur(12px)',
-          borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
-          boxShadow: scrolled ? '0 4px 16px rgba(0,0,0,0.06)' : 'none',
-          transition: 'all 0.3s ease'
+          backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.94)',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
+          borderBottom: scrolled ? '1px solid rgba(0, 0, 0, 0.1)' : '1px solid rgba(0, 0, 0, 0.06)',
+          boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.08)' : 'none',
+          transform: 'translateZ(0)',
+          WebkitTransform: 'translateZ(0)',
+          willChange: 'background-color, box-shadow, border-bottom',
+          transition: 'background-color 0.25s ease, box-shadow 0.25s ease, border-bottom 0.25s ease'
         }}
       >
         <div
@@ -77,8 +95,7 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            height: scrolled ? '72px' : '90px',
-            transition: 'height 0.3s ease'
+            height: '76px'
           }}
         >
           {/* Logo Area */}
@@ -93,8 +110,8 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
           >
             <div
               style={{
-                width: scrolled ? '50px' : '64px',
-                height: scrolled ? '50px' : '64px',
+                width: '54px',
+                height: '54px',
                 borderRadius: '50%',
                 overflow: 'hidden',
                 border: '2.5px solid #f59e0b',
@@ -103,8 +120,7 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#ffffff',
-                flexShrink: 0,
-                transition: 'all 0.3s ease'
+                flexShrink: 0
               }}
             >
               <img
@@ -123,7 +139,7 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
                 {/* Blinking food icon */}
                 <span
                   className="food-blink"
-                  style={{ fontSize: scrolled ? '1.1rem' : '1.35rem', lineHeight: 1 }}
+                  style={{ fontSize: '1.25rem', lineHeight: 1 }}
                   role="img"
                   aria-label="food"
                 >
@@ -133,17 +149,11 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
                   className="brand-wave-text"
                   style={{
                     fontFamily: 'var(--font-heading)',
-                    fontSize: scrolled ? '1.25rem' : '1.5rem',
+                    fontSize: '1.38rem',
                     fontWeight: '800',
                     letterSpacing: '0.05em',
                     lineHeight: 1.1,
-                    transition: 'font-size 0.3s ease',
                     whiteSpace: 'nowrap',
-                    /*
-                     * Base color is always visible deep-navy (#0f172a).
-                     * A narrow gold→amber highlight band sweeps slowly L→R.
-                     * Text is ALWAYS readable at every point of the animation.
-                     */
                     background: 'linear-gradient(90deg, #0f172a 0%, #0f172a 30%, #f59e0b 45%, #ea580c 55%, #0f172a 65%, #0f172a 100%)',
                     backgroundSize: '280% 100%',
                     WebkitBackgroundClip: 'text',
