@@ -15,22 +15,22 @@ export default function DeveloperSticky() {
           right: 0,
           top: '50%',
           transform: 'translateY(-50%)',
-          backgroundColor: '#ea580c', // Orange sticky tab
+          backgroundColor: '#ea580c', // Bright orange to highlight
           color: 'white',
-          padding: '12px 12px 12px 28px', // Increased left padding for the arrow point
-          clipPath: 'polygon(16px 0, 100% 0, 100% 100%, 16px 100%, 0 50%)', // Creates the arrow pointing left
+          padding: '10px 16px 10px 10px',
+          borderTopLeftRadius: '30px',
+          borderBottomLeftRadius: '30px',
           cursor: 'pointer',
           display: 'flex',
           alignItems: 'center',
           gap: '12px',
-          boxShadow: '-4px 4px 15px rgba(0,0,0,0.2)', // Note: clip-path hides drop-shadow on the element itself, but it's okay for the container
-          filter: 'drop-shadow(-2px 4px 6px rgba(0,0,0,0.2))', // Better shadow for clip-path
+          boxShadow: '-4px 4px 15px rgba(0,0,0,0.2)',
           zIndex: 9999,
           transition: 'transform 0.3s ease, background-color 0.3s ease',
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.backgroundColor = '#c2410c';
-          e.currentTarget.style.transform = 'translateY(-50%) translateX(-5px)';
+          e.currentTarget.style.transform = 'translateY(-50%) translateX(-3px)';
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.backgroundColor = '#ea580c';
@@ -41,15 +41,16 @@ export default function DeveloperSticky() {
           src={developerImage}
           alt="Vishal S H"
           style={{
-            width: '48px',
-            height: '48px',
+            width: '42px',
+            height: '42px',
             borderRadius: '50%',
             objectFit: 'cover',
-            border: '2px solid white'
+            border: '2px solid white',
+            flexShrink: 0
           }}
         />
-        <div style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', fontWeight: '700', fontSize: '0.85rem', letterSpacing: '0.05em' }}>
-          Developed by Vishal S H
+        <div style={{ fontWeight: '600', fontSize: '0.85rem', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
+          Developed by Vishal
         </div>
       </div>
 
@@ -67,48 +68,40 @@ export default function DeveloperSticky() {
           transition: 'right 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
           display: 'flex',
           flexDirection: 'column',
-          padding: '30px',
         }}
       >
-        <button
-          onClick={() => setIsOpen(false)}
-          style={{
-            position: 'absolute',
-            top: '20px',
-            right: '20px',
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            color: '#64748b'
-          }}
-        >
-          <X size={24} />
-        </button>
-
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
-          <div
+        <div style={{ width: '100%', height: '320px', position: 'relative' }}>
+          <img
+            src={developerImage}
+            alt="Vishal S H"
             style={{
-              width: '120px',
-              height: '120px',
-              margin: '0 auto 20px auto',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
+          />
+          <button
+            onClick={() => setIsOpen(false)}
+            style={{
+              position: 'absolute',
+              top: '15px',
+              right: '15px',
+              background: 'rgba(0,0,0,0.5)',
+              border: 'none',
+              cursor: 'pointer',
+              color: 'white',
               borderRadius: '50%',
-              padding: '4px',
-              background: 'linear-gradient(135deg, #ea580c, #ec4899)',
+              padding: '6px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
-            <img
-              src={developerImage}
-              alt="Vishal S H"
-              style={{
-                width: '100%',
-                height: '100%',
-                borderRadius: '50%',
-                objectFit: 'cover',
-                border: '3px solid white'
-              }}
-            />
-          </div>
+            <X size={20} />
+          </button>
+        </div>
 
+        <div style={{ textAlign: 'center', padding: '30px' }}>
           <h2 style={{ fontSize: '1.4rem', fontWeight: '800', color: '#0f172a', margin: '0 0 5px 0' }}>Vishal S H</h2>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', color: '#ea580c', fontWeight: '600', fontSize: '0.9rem', marginBottom: '25px' }}>
             <Code size={16} />
