@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import MobileBottomBar from './components/MobileBottomBar';
 import EnquiryModal from './components/EnquiryModal';
 import StickyContact from './components/StickyContact';
+import DeveloperSticky from './components/DeveloperSticky';
 import {
   staticSettings,
   staticRooms,
@@ -140,6 +141,7 @@ export default function App() {
       />
 
       <StickyContact />
+      <DeveloperSticky />
 
     </div>
   );
