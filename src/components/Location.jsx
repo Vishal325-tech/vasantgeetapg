@@ -8,7 +8,7 @@ export default function Location({ settings }) {
 
   const nearby = settings?.nearbyLocations || {
     colleges: "NTTF Dharwad (500m), Karnatak College Dharwad (KCD) (1.5km), JSS College (2km)",
-    busStops: "CBT Dharwad (1km), NTTF BRTS Stop (50m)",
+    busStops: "CBT Dharwad (1km), NTTF BRTC Bus Stop (50m)",
     railwayStation: "Dharwad Railway Station (1.5km - 5 min ride)",
     keyLandmarks: "Sangam Circle (50m), Sangam Theatre (20-50m), ATMs & Hospitals (200m)"
   };

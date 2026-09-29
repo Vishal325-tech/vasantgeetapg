@@ -11,7 +11,7 @@ export const staticSettings = {
   phone: '+91 8073762582',
   phone2: '+91 8494865435',
   email: 'vasantshagoti1@gmail.com',
-  address: 'VasantGeeta PG Boys PG, Venkateshwara Complex, behind Nirmala Saree Centre, near the NTTF BRTC Bus Stop, Hosayellapur, Dharwad, Karnataka 580001',
+  address: 'VasantGeeta Boys PG, Venkateshwara Complex, behind Nirmala Saree Centre, near the NTTF BRTC Bus Stop, Hosayellapur, Dharwad, Karnataka 580001',
   googleMapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.330364213797!2d75.0092795!3d15.4537984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8cda7146004dd%3A0x627a841a517851f3!2sVasantGeeta%20PG%20For%20Boys!5e0!3m2!1sen!2sin!4v1',
   instagramUrl: 'https://instagram.com',
