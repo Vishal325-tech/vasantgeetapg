@@ -316,7 +316,6 @@ export default function Hero({ settings, onOpenEnquiry }) {
                   borderRadius: '30px',
                   background: 'linear-gradient(135deg, #ec4899, #f97316, #ec4899)',
                   zIndex: -1,
-                  animation: 'pinkRing 3s ease-in-out infinite',
                   backgroundSize: '200% 200%',
                   animation: 'shimmer 4s linear infinite, pinkRing 3s ease-in-out infinite'
                 }}
