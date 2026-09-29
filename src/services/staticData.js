@@ -6,7 +6,7 @@ export const staticSettings = {
   siteName: 'Vasant Geeta',
   businessName: 'Vasant Geeta',
   brandSubtitle: 'Boys PG & Mess • A Home Away From Home',
-  logoUrl: '/logo.jpeg',
+  logoUrl: `${import.meta.env.BASE_URL}logo.jpeg`,
   tagline: 'BOYS PG & MESS — A Home Away From Home',
   phone: '+91 8494865435',
   phone2: '+91 8076762582',

@@ -15,7 +15,7 @@ export default function Hero({ settings, onOpenEnquiry }) {
       style={{
         position: 'relative',
         /* Full-bleed PG room illustration */
-        backgroundImage: 'url(/hero-bg.png)',
+        backgroundImage: `url(${import.meta.env.BASE_URL}hero-bg.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
@@ -87,7 +87,7 @@ export default function Hero({ settings, onOpenEnquiry }) {
                 }}
               >
                 <img
-                  src="/logo.jpeg"
+                  src={`${import.meta.env.BASE_URL}logo.jpeg`}
                   alt="Vasant Geeta"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
@@ -323,7 +323,7 @@ export default function Hero({ settings, onOpenEnquiry }) {
 
               {/* User Photo */}
               <img
-                src="/vishal.jpg"
+                src={`${import.meta.env.BASE_URL}vishal.jpg`}
                 alt="Vishal S H – Developer"
                 style={{
                   width: '100%',
