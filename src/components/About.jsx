@@ -126,7 +126,7 @@ export default function About({ onOpenEnquiry, onOpenCoaching }) {
                   }}
                 >
                   <img
-                    src="/logo.jpeg"
+                    src={`${import.meta.env.BASE_URL}logo.jpeg`}
                     alt="Vasant Geeta Seal"
                     style={{
                       width: '100%',

@@ -39,7 +39,7 @@ export default function Footer({ settings, onOpenAdmin, onOpenEnquiry }) {
                 }}
               >
                 <img
-                  src="/logo.jpeg"
+                  src={`${import.meta.env.BASE_URL}logo.jpeg`}
                   alt="Vasant Geeta Logo"
                   style={{
                     width: '100%',

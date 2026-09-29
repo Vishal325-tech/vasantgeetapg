@@ -114,7 +114,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultRoomType }) {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
           <img
-            src="/logo.jpeg"
+            src={`${import.meta.env.BASE_URL}logo.jpeg`}
             alt="Vasant Geeta"
             style={{
               width: '48px',

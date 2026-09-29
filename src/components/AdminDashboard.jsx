@@ -273,7 +273,7 @@ export default function AdminDashboard({ adminUser, onLogout, onClose, onRefresh
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <img
-            src="/logo.jpeg"
+            src={`${import.meta.env.BASE_URL}logo.jpeg`}
             alt="Vasant Geeta"
             style={{
               width: '42px',

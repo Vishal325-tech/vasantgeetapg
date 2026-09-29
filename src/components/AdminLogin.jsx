@@ -74,7 +74,7 @@ export default function AdminLogin({ isOpen, onClose, onLoginSuccess }) {
 
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '18px' }}>
           <img
-            src="/logo.jpeg"
+            src={`${import.meta.env.BASE_URL}logo.jpeg`}
             alt="Vasant Geeta"
             style={{
               width: '72px',
