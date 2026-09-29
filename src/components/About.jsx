@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, Utensils, GraduationCap, CheckCircle, ArrowRight, ShieldCheck, HeartHandshake } from 'lucide-react';
+import logoImg from '../assets/logo.jpeg';
 
 export default function About({ onOpenEnquiry, onOpenCoaching }) {
   const pillars = [
@@ -37,11 +38,11 @@ export default function About({ onOpenEnquiry, onOpenCoaching }) {
         <div className="section-header">
           <div className="section-tag">
             <HeartHandshake size={15} />
-            About Vasant Geeta
+            About VasantGeeta
           </div>
           <h2 className="section-title">More Than Just a PG</h2>
           <p className="section-subtitle" style={{ fontSize: '1.15rem' }}>
-            “Vasant Geeta is designed to provide students and working professionals with a comfortable, clean and student-friendly place to stay. Along with accommodation, we provide hygienic and nutritious mess facilities.”
+            “VasantGeeta is designed to provide students and working professionals with a comfortable, clean and student-friendly place to stay. Along with accommodation, we provide hygienic and nutritious mess facilities.”
           </p>
         </div>
 
@@ -122,16 +123,16 @@ export default function About({ onOpenEnquiry, onOpenCoaching }) {
                     border: '2.5px solid #f59e0b',
                     boxShadow: '0 0 14px rgba(245, 158, 11, 0.45)',
                     flexShrink: 0,
-                    backgroundColor: '#ffffff'
+                    backgroundColor: '#f5ebe1'
                   }}
                 >
                   <img
-                    src={`${import.meta.env.BASE_URL}logo.jpeg`}
-                    alt="Vasant Geeta Seal"
+                    src={logoImg}
+                    alt="VasantGeeta Seal"
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'cover',
+                      objectFit: 'contain',
                       display: 'block'
                     }}
                   />

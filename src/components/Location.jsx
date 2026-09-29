@@ -28,7 +28,7 @@ export default function Location({ settings }) {
             <Compass size={15} />
             Strategic Accessibility
           </div>
-          <h2 className="section-title">Find Vasant Geetha</h2>
+          <h2 className="section-title">Find VasantGeeta</h2>
           <p className="section-subtitle">
             Centrally situated in a calm, academic-oriented neighbourhood with quick walking access to colleges, study libraries, transit stops, and essential amenities.
           </p>
@@ -176,7 +176,7 @@ export default function Location({ settings }) {
             }}
           >
             <iframe
-              title="Vasant Geetha Location Map"
+              title="VasantGeeta Location Map"
               src={mapsEmbed}
               width="100%"
               height="100%"

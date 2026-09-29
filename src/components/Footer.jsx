@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Phone, MessageSquare, Mail, MapPin, Sparkles, Heart, Code2 } from 'lucide-react';
+import logoImg from '../assets/logo.jpeg';
 
 export default function Footer({ settings, onOpenAdmin, onOpenEnquiry }) {
   const phone = settings?.phone || '+91 8073762582';
@@ -31,7 +32,7 @@ export default function Footer({ settings, onOpenAdmin, onOpenEnquiry }) {
                   overflow: 'hidden',
                   border: '2.5px solid #eab308',
                   boxShadow: '0 0 16px rgba(234, 179, 8, 0.4)',
-                  backgroundColor: '#ffffff',
+                  backgroundColor: '#f5ebe1',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -39,19 +40,19 @@ export default function Footer({ settings, onOpenAdmin, onOpenEnquiry }) {
                 }}
               >
                 <img
-                  src={`${import.meta.env.BASE_URL}logo.jpeg`}
-                  alt="Vasant Geeta Logo"
+                  src={logoImg}
+                  alt="VasantGeeta Logo"
                   style={{
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover',
+                    objectFit: 'contain',
                     display: 'block'
                   }}
                 />
               </div>
               <div>
                 <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.35rem', fontWeight: '800', color: '#ffffff', letterSpacing: '0.03em' }}>
-                  {settings?.businessName || 'Vasant Geeta'}
+                  {settings?.businessName || 'VasantGeeta'}
                 </div>
                 <div style={{ fontSize: '0.72rem', color: '#fbbf24', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                   {settings?.brandSubtitle || 'Boys PG & Mess • Hubballi'}
@@ -155,7 +156,7 @@ export default function Footer({ settings, onOpenAdmin, onOpenEnquiry }) {
           }}
         >
           <div>
-            © {new Date().getFullYear()} Vasant Geeta. All Rights Reserved. BOYS PG & MESS — A Home Away From Home.
+            © {new Date().getFullYear()} VasantGeeta. All Rights Reserved. BOYS PG & MESS — A Home Away From Home.
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>

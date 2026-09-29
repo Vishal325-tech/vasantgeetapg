@@ -3,7 +3,7 @@ import { staticSettings } from '../services/staticData';
 
 const StickyContact = () => {
   const whatsappUrl = `https://wa.me/${staticSettings.whatsappNumber}?text=${encodeURIComponent(
-    "Hello! I am enquiring about Vasant Geeta PG & Mess availability."
+    "Hello! I am enquiring about VasantGeeta PG & Mess availability."
   )}`;
   const phoneUrl = `tel:${staticSettings.phone.replace(/\s+/g, '')}`;
 

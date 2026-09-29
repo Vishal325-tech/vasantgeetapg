@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logoImg from '../assets/logo.jpeg';
 import {
   LayoutDashboard,
   Bed,
@@ -273,20 +274,20 @@ export default function AdminDashboard({ adminUser, onLogout, onClose, onRefresh
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <img
-            src={`${import.meta.env.BASE_URL}logo.jpeg`}
-            alt="Vasant Geeta"
+            src={logoImg}
+            alt="VasantGeeta"
             style={{
               width: '42px',
               height: '42px',
               borderRadius: '50%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               border: '2px solid #eab308',
-              backgroundColor: '#ffffff'
+              backgroundColor: '#f5ebe1'
             }}
           />
           <div>
             <div style={{ fontSize: '1.1rem', fontWeight: '800', color: '#ffffff' }}>
-              Vasant Geeta Admin Dashboard
+              VasantGeeta Admin Dashboard
             </div>
             <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>
               Management Portal • Logged in as: {adminUser?.name || 'Administrator'}
@@ -583,7 +584,7 @@ export default function AdminDashboard({ adminUser, onLogout, onClose, onRefresh
                               <Phone size={14} /> Call
                             </a>
                             <a
-                              href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Hello ${enq.fullName}, this is Vasant Geetha PG Management regarding your enquiry for ${enq.preferredRoomType}.`)}`}
+                              href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Hello ${enq.fullName}, this is VasantGeeta PG Management regarding your enquiry for ${enq.preferredRoomType}.`)}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="btn btn-whatsapp btn-sm"
@@ -1083,7 +1084,7 @@ export default function AdminDashboard({ adminUser, onLogout, onClose, onRefresh
 
                         <div style={{ display: 'flex', gap: '10px' }}>
                           <a
-                            href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Hello ${lead.studentName}, thank you for registering with Vasant Geetha Competitive Academy for ${lead.examInterest}.`)}`}
+                            href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Hello ${lead.studentName}, thank you for registering with VasantGeeta Competitive Academy for ${lead.examInterest}.`)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-whatsapp btn-sm"

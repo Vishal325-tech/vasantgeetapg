@@ -3,8 +3,8 @@
 // entirely as a frontend-only project (no Node / Express required).
 
 export const staticSettings = {
-  siteName: 'Vasant Geeta',
-  businessName: 'Vasant Geeta',
+  siteName: 'VasantGeeta',
+  businessName: 'VasantGeeta',
   brandSubtitle: 'Boys PG & Mess • A Home Away From Home',
   logoUrl: `${import.meta.env.BASE_URL}logo.jpeg`,
   tagline: 'BOYS PG & MESS — A Home Away From Home',
@@ -112,7 +112,7 @@ export const staticReviews = [
 export const staticFaqs = [
   { id: '1', question: 'What is the rent for a single room?', answer: 'Please contact us directly for current pricing and availability. Rates vary by room type and occupancy.' },
   { id: '2', question: 'Is food (mess) included in the rent?', answer: 'Mess is available as an optional add-on or as a combined package. Contact us for details on the mess plan.' },
-  { id: '3', question: 'Is the PG only for boys?', answer: 'Yes, Vasant Geetha PG is exclusively for boys/male students and working professionals.' },
+  { id: '3', question: 'Is the PG only for boys?', answer: 'Yes, VasantGeeta PG is exclusively for boys/male students and working professionals.' },
   { id: '4', question: 'What documents are required for admission?', answer: 'You will need a valid photo ID (Aadhaar, college ID), a passport-size photo, and a parent/guardian contact number.' },
   { id: '5', question: 'Is Wi-Fi available 24×7?', answer: 'Yes, high-speed unlimited Wi-Fi is available throughout the premises round the clock.' },
   { id: '6', question: 'Is there a study room?', answer: 'Yes, we have a dedicated quiet study room for students preparing for competitive exams.' },

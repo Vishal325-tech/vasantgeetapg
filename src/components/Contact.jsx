@@ -381,7 +381,7 @@ export default function Contact({ settings, prefillRoom }) {
 
                 {/* WhatsApp Button */}
                 <a
-                  href={`https://wa.me/${cleanWhatsapp}?text=${encodeURIComponent("Hello Vasant Geetha Management, I would like to enquire about PG accommodation & mess availability.")}`}
+                  href={`https://wa.me/${cleanWhatsapp}?text=${encodeURIComponent("Hello VasantGeeta Management, I would like to enquire about PG accommodation & mess availability.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp"

@@ -44,7 +44,7 @@ export default function Facilities({ facilities }) {
           </div>
           <h2 className="section-title">Everything You Need to Live & Study Well</h2>
           <p className="section-subtitle">
-            All amenities at Vasant Geetha are actively maintained and confirmed for resident comfort, safety, and focused preparation.
+            All amenities at VasantGeeta are actively maintained and confirmed for resident comfort, safety, and focused preparation.
           </p>
         </div>
 

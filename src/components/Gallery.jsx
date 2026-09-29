@@ -21,7 +21,7 @@ export default function Gallery({ gallery }) {
             <Camera size={15} />
             Visual Tour
           </div>
-          <h2 className="section-title">Explore Vasant Geetha</h2>
+          <h2 className="section-title">Explore VasantGeeta</h2>
           <p className="section-subtitle">
             Take a transparent visual tour of our clean student bedrooms, study desks, hygienic kitchen, dining space, and surrounding community.
           </p>

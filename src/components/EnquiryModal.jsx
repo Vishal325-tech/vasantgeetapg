@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Send, CheckCircle2, AlertCircle, Phone, Mail, User, Calendar, Users } from 'lucide-react';
+import logoImg from '../assets/logo.jpeg';
 
 
 export default function EnquiryModal({ isOpen, onClose, defaultRoomType }) {
@@ -114,15 +115,15 @@ export default function EnquiryModal({ isOpen, onClose, defaultRoomType }) {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
           <img
-            src={`${import.meta.env.BASE_URL}logo.jpeg`}
-            alt="Vasant Geeta"
+            src={logoImg}
+            alt="VasantGeeta"
             style={{
               width: '48px',
               height: '48px',
               borderRadius: '50%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               border: '2px solid #eab308',
-              backgroundColor: '#ffffff',
+              backgroundColor: '#f5ebe1',
               flexShrink: 0
             }}
           />
@@ -131,7 +132,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultRoomType }) {
               Official Booking & Admission
             </div>
             <h3 style={{ fontSize: '1.35rem', color: 'var(--navy-900)', margin: '2px 0 0 0', fontWeight: '800' }}>
-              Enquire for Vasant Geeta Stay
+              Enquire for VasantGeeta Stay
             </h3>
           </div>
         </div>

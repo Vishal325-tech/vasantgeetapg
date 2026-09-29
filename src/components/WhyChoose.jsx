@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Bed, Utensils, BookOpen, Users, GraduationCap, Layers, CheckCircle2 } from 'lucide-react';
 
 export default function WhyChoose() {
@@ -43,9 +43,9 @@ export default function WhyChoose() {
         <div className="section-header">
           <div className="section-tag">
             <CheckCircle2 size={15} />
-            The Vasant Geetha Advantage
+            The VasantGeeta Advantage
           </div>
-          <h2 className="section-title">Why Choose Vasant Geetha</h2>
+          <h2 className="section-title">Why Choose VasantGeeta</h2>
           <p className="section-subtitle">
             We provide a transparent, dependable living and learning setup built with student priorities at the center.
           </p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Bed, Utensils, Users, ShieldCheck, ArrowRight, Phone, CheckCircle2, Sparkles, MapPin, Star } from 'lucide-react';
+import logoImg from '../assets/logo.jpeg';
 
 export default function Hero({ settings, onOpenEnquiry }) {
   const trustIndicators = [
@@ -79,7 +80,7 @@ export default function Hero({ settings, onOpenEnquiry }) {
                   borderRadius: '50%',
                   overflow: 'hidden',
                   border: '2px solid #f59e0b',
-                  backgroundColor: '#ffffff',
+                  backgroundColor: '#f5ebe1',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -87,12 +88,12 @@ export default function Hero({ settings, onOpenEnquiry }) {
                 }}
               >
                 <img
-                  src={`${import.meta.env.BASE_URL}logo.jpeg`}
-                  alt="Vasant Geeta"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  src={logoImg}
+                  alt="VasantGeeta"
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
                 />
               </div>
-              <span>Vasant Geeta Boys PG &amp; Mess • A Home Away From Home</span>
+              <span>VasantGeeta Boys PG &amp; Mess • A Home Away From Home</span>
             </div>
 
             {/* Main Heading */}
@@ -131,7 +132,7 @@ export default function Hero({ settings, onOpenEnquiry }) {
               }}
             >
               {settings?.heroSubheading ||
-                'Vasant Geetha provides comfortable boys PG accommodation and hygienic mess facilities, with a vision to build a complete student living and learning community.'}
+                'VasantGeeta provides comfortable boys PG accommodation and hygienic mess facilities, with a vision to build a complete student living and learning community.'}
             </p>
 
             {/* Buttons */}

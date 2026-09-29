@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Lock, Mail, Shield, AlertCircle, ArrowRight, X } from 'lucide-react';
+import logoImg from '../assets/logo.jpeg';
 import { api } from '../services/api';
 
 export default function AdminLogin({ isOpen, onClose, onLoginSuccess }) {
@@ -74,16 +75,16 @@ export default function AdminLogin({ isOpen, onClose, onLoginSuccess }) {
 
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '18px' }}>
           <img
-            src={`${import.meta.env.BASE_URL}logo.jpeg`}
-            alt="Vasant Geeta"
+            src={logoImg}
+            alt="VasantGeeta"
             style={{
               width: '72px',
               height: '72px',
               borderRadius: '50%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               border: '3px solid #eab308',
               boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
-              backgroundColor: '#ffffff'
+              backgroundColor: '#f5ebe1'
             }}
           />
         </div>
@@ -92,7 +93,7 @@ export default function AdminLogin({ isOpen, onClose, onLoginSuccess }) {
           Management Portal Login
         </h3>
         <p style={{ fontSize: '0.88rem', color: 'var(--navy-600)', marginBottom: '22px', textAlign: 'center' }}>
-          Secure administrative access for Vasant Geeta management.
+          Secure administrative access for VasantGeeta management.
         </p>
 
         {error && (

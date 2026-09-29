@@ -68,7 +68,7 @@ export default function App() {
         onOpenEnquiry={() => handleOpenEnquiry()}
       />
 
-      {/* 3. About Vasant Geetha */}
+      {/* 3. About VasantGeeta */}
       <About
         onOpenEnquiry={(service) => handleOpenEnquiry(service)}
         onOpenCoaching={() => scrollToSection('coaching')}
@@ -107,7 +107,7 @@ export default function App() {
       {/* 11. Student Ecosystem Vision (5-Phase Roadmap) */}
       <EcosystemVision />
 
-      {/* 12. Why Choose Vasant Geetha (6 Cards) */}
+      {/* 12. Why Choose VasantGeeta (6 Cards) */}
       <WhyChoose />
 
       {/* 13. Testimonials Section */}

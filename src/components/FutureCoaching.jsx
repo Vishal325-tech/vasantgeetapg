@@ -142,7 +142,7 @@ export default function FutureCoaching({ settings }) {
               letterSpacing: '-0.02em'
             }}
           >
-            {settings?.coachingHeading || 'Coming Soon: Vasant Geetha Competitive Academy'}
+            {settings?.coachingHeading || 'Coming Soon: VasantGeeta Competitive Academy'}
           </h2>
 
           <div
@@ -167,7 +167,7 @@ export default function FutureCoaching({ settings }) {
             }}
           >
             {settings?.coachingDescription ||
-              '“Vasant Geetha plans to expand into competitive examination coaching, creating a complete environment where students can stay, study and prepare for their career goals.”'}
+              '“VasantGeeta plans to expand into competitive examination coaching, creating a complete environment where students can stay, study and prepare for their career goals.”'}
           </p>
         </div>
 

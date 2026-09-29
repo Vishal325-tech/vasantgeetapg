@@ -57,7 +57,7 @@ export default function Testimonials({ reviews, onReviewSubmitted }) {
           </div>
           <h2 className="section-title">What Residents Say</h2>
           <p className="section-subtitle">
-            Authentic feedback from students and working professionals staying at Vasant Geetha.
+            Authentic feedback from students and working professionals staying at VasantGeeta.
           </p>
         </div>
 

@@ -110,8 +110,8 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
           >
             <div
               style={{
-                width: '54px',
-                height: '54px',
+                width: '56px',
+                height: '56px',
                 borderRadius: '50%',
                 overflow: 'hidden',
                 border: '2.5px solid #f59e0b',
@@ -119,17 +119,17 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: '#ffffff',
+                backgroundColor: '#f5ebe1',
                 flexShrink: 0
               }}
             >
               <img
                 src={logoImg}
-                alt="Vasant Geeta Logo"
+                alt="VasantGeeta Logo"
                 style={{
                   width: '100%',
                   height: '100%',
-                  objectFit: 'cover',
+                  objectFit: 'contain',
                   display: 'block'
                 }}
               />
@@ -162,7 +162,7 @@ export default function Navbar({ settings, onOpenEnquiry, onOpenAdmin, onOpenCoa
                     animation: 'brandWave 15s ease-in-out infinite'
                   }}
                 >
-                  {settings?.businessName || 'Vasant Geeta'}
+                  {settings?.businessName || 'VasantGeeta'}
                 </span>
               </div>
               <span

@@ -60,7 +60,7 @@ export default function MobileBottomBar({ settings, onOpenEnquiry }) {
 
       {/* WhatsApp Button — real icon for maximum visibility */}
       <a
-        href={`https://wa.me/${cleanWhatsapp}?text=${encodeURIComponent('Hello Vasant Geetha, I want to enquire about PG accommodation & mess.')}`}
+        href={`https://wa.me/${cleanWhatsapp}?text=${encodeURIComponent('Hello VasantGeeta, I want to enquire about PG accommodation & mess.')}`}
         target="_blank"
         rel="noopener noreferrer"
         style={{

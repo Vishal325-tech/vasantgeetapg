@@ -62,7 +62,7 @@ export default function EcosystemVision() {
           </div>
           <h2 className="section-title">The Student Ecosystem Vision</h2>
           <p className="section-subtitle">
-            Vasant Geetha is thoughtfully engineered from day one to evolve from exceptional accommodation into an integrated student living and competitive learning powerhouse.
+            VasantGeeta is thoughtfully engineered from day one to evolve from exceptional accommodation into an integrated student living and competitive learning powerhouse.
           </p>
         </div>
 
