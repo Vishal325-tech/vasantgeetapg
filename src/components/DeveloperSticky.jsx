@@ -7,8 +7,23 @@ export default function DeveloperSticky() {
 
   return (
     <>
+      <style>{`
+        .dev-sticky-text {
+          display: block;
+        }
+        @media (max-width: 768px) {
+          .dev-sticky-text {
+            display: none !important;
+          }
+          .dev-sticky-container {
+            padding: 8px 10px 8px 8px !important;
+          }
+        }
+      `}</style>
+
       {/* Sticky Tab */}
       <div
+        className="dev-sticky-container"
         onClick={() => setIsOpen(true)}
         style={{
           position: 'fixed',
@@ -49,7 +64,7 @@ export default function DeveloperSticky() {
             flexShrink: 0
           }}
         />
-        <div style={{ fontWeight: '600', fontSize: '0.85rem', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
+        <div className="dev-sticky-text" style={{ fontWeight: '600', fontSize: '0.85rem', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
           Developed by Vishal
         </div>
       </div>
