@@ -12,11 +12,30 @@ export default function DeveloperSticky() {
           display: block;
         }
         @media (max-width: 768px) {
-          .dev-sticky-text {
-            display: none !important;
-          }
           .dev-sticky-container {
-            padding: 8px 10px 8px 8px !important;
+            flex-direction: column !important;
+            padding: 10px 8px !important;
+            gap: 6px !important;
+            border-top-left-radius: 12px !important;
+            border-bottom-left-radius: 12px !important;
+          }
+          .dev-profile-img {
+            width: 32px !important;
+            height: 32px !important;
+          }
+          .dev-sticky-text {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.55rem !important;
+            font-weight: 500 !important;
+            text-transform: uppercase;
+            letter-spacing: 0.05em !important;
+            white-space: normal !important;
+            text-align: center;
+            max-width: 60px;
+            line-height: 1.3;
+            opacity: 0.95;
           }
         }
       `}</style>
@@ -53,6 +72,7 @@ export default function DeveloperSticky() {
         }}
       >
         <img
+          className="dev-profile-img"
           src={developerImage}
           alt="Vishal S H"
           style={{
@@ -64,8 +84,9 @@ export default function DeveloperSticky() {
             flexShrink: 0
           }}
         />
-        <div className="dev-sticky-text" style={{ fontWeight: '600', fontSize: '0.85rem', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
-          Developed by Vishal
+        <div className="dev-sticky-text" style={{ display: 'flex', gap: '4px', fontWeight: '500', fontSize: '0.85rem', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>
+          <span>Developed by</span>
+          <span style={{ fontWeight: '800' }}>Vishal</span>
         </div>
       </div>
 
